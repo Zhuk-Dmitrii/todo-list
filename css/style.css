@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    padding: 40px 15px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1230px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: rgb(0, 255, 255);
+}
+
+.container {
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+.header {
+    max-width: 100%;
+    height: 100px;
+}
+
+.header__form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__form :not(:first-child) {
+    margin-left: 15px;
+}
+
+.header__button-delete {
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: orange;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header__button-delete:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 3px rgb(7, 82, 112);
+}
+
+.header__button-delete:active {
+    transform: none;
+    transition: none;
+    box-shadow: 0px 0px 10px 3px rgb(232, 100, 28);
+
+}
+
+.header__text-field {
+    width: 400px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.header__text-field:focus {
+    box-shadow: 0px 0px 10px 3px rgb(7, 82, 112);
+    transition: all 0.5s;
+    outline: 0;
+}
+
+.header__text-field[placeholder] {
+    text-align: center;
+}
+
+.header__button-add {
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: orange;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header__button-add:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 3px rgb(7, 82, 112);
+}
+
+.header__button-add:active {
+    transform: none;
+    transition: none;
+    box-shadow: 0px 0px 10px 3px rgb(232, 100, 28);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    min-height: 200px;
+    transition: all 0.3s;
+}
+
+.card__form-background {
+    background-color: rgb(125, 179, 161);
+    
+}
+
+
+.card__checkbox {
+    margin: 0px 20px;
+    min-width: 50px;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+.card__checkbox:checked{
+    box-shadow: 0px 0px 10px 3px rgb(7, 82, 112);
+    transition: all 0.5s;
+}
+
+.card__checkbox:checked ~ .card__content-text{
+    box-shadow: 0px 0px 10px 3px rgb(7, 82, 112);
+    transition: all 0.5s;
+    text-decoration: line-through;
+}
+
+.card__content-text {
+    width: 50%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* .content__text-line-through {
+    text-decoration: line-through;
+} */
+
+.card__content-other {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    min-height: 200px;
+    margin-right: 30px;
+    padding: 30px 0px 30px 15px;
+    box-sizing: border-box;
+}
+
+.card__button-close {
+    min-width: 80px;
+    min-height: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: orange;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card__button-close:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 3px rgb(7, 82, 112);
+}
+
+.card__button-close:active {
+    transform: none;
+    transition: none;
+    box-shadow: 0px 0px 10px 3px rgb(232, 100, 28);
+}
+
+.card__date {
+    min-width: 50px;
+    min-height: 40px;
+    border-radius: 30px;
+}
